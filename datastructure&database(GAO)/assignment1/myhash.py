@@ -98,6 +98,11 @@ def problem8Hash():
     p8Hash.showHashTable()
 
 
+def quizHash():
+    print("quizHash")
+    qHash=myhash(7,lambda x,i:x%7+i+i*i,88,97,39,158)
+    qHash.showHashTable()
+
 class chainNode():
     def __init__(self,value=None,next=None) -> None:
         self.val=value
@@ -176,3 +181,5 @@ print("\n")
 problem7Hash()
 print("\n")
 problem8Hash()
+print("\n")
+quizHash()
